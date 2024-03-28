@@ -1,0 +1,242 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: #fafafa;
+}
+.header-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+}
+
+.header-logo > img {
+  width: 130px;
+  height: 52px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  color: #40424a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header-button {
+  padding: 10px 20px;
+  color: white;
+  background: #21ace8;
+  gap: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-block;
+}
+
+.header-button:hover {
+  cursor: pointer;
+  background-color: #0086d4;
+}
+
+.header-button:active {
+  background-color: #006dad;
+}
+
+.active-list {
+  color: #21ace8;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  z-index: 1;
+  align-items: center;
+  gap: 10px;
+  background-color: #fafafa;
+  border-radius: 15px;
+}
+
+li:hover .sub-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sub-menu li {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#burgerMenuIcon {
+  display: none;
+  width: 30px;
+  height: 5px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.burger-button {
+  border: none;
+  background: none;
+}
+
+#burgerMenuIcon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  text-align: right;
+  background: #40424a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  display: inline-block;
+  text-align: right;
+}
+
+#burgerMenuIcon span:nth-child(1) {
+  top: 0px;
+  width: 100%;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#burgerMenuIcon span:nth-child(2) {
+  top: 10px;
+  width: 100%;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#burgerMenuIcon span:nth-child(3) {
+  top: 20px;
+  width: 100%;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#burgerMenuIcon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+#burgerMenuIcon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#burgerMenuIcon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 100%;
+  top: 18px;
+  left: 8px;
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation-list {
+    gap: 20px;
+  }
+
+  .header {
+    padding: 18px 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    padding: 15px 20px;
+  }
+  .header-body {
+    padding: 0;
+    align-items: center;
+  }
+  #burgerMenuIcon {
+    display: block;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .navigation .navigation-list {
+    display: none;
+  }
+
+  .navigation {
+    margin-bottom: 20px;
+  }
+
+  .navigation-list.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    color: #40424a;
+    width: 100%;
+    z-index: -1;
+    background: #fafafa;
+    font-size: 32px;
+    gap: 50px;
+    font-weight: 300;
+  }
+
+  .navigation-list.active .sub-menu {
+    display: none;
+  }
+
+  .navigation-list.active .openIcon {
+    display: none;
+  }
+}

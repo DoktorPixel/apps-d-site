@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:300,regular,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap');
+
+@import '@/app/styles/blog/blog.css';
+@import '@/app/styles/contact/contact-us.css';
+
+* {
+  font-family: Inter, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
+  min-height: 100%;
+  margin-top: 108px;
+}
+
+.main .error-data,
+.loading-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactUs-right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.btn {
+  color: #fafafa;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 8px;
+  width: 210px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.breadcrumb img {
+  width: 8px;
+}
+
+.breadcrumb :last-child {
+  font-weight: 700;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 0.7;
+}
+
+.privacy-policy {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.consent-banner {
+  z-index: 100000;
+}
+
+
+.form-right .custom-button {
+  width: 100%;
+  height: 60px;
+  color: #fafafa;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #21ace8;
+  display: inline-block;
+  border: none;
+  padding: 4px 15px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+
+
+
+@media (max-width: 768px) {
+  .main {
+    margin-top: 90px;
+  }
+}

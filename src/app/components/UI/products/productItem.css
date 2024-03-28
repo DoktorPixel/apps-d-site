@@ -1,0 +1,93 @@
+.product_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 24px 20px;
+    max-width: 320px;
+    height: 40px;
+    border-radius: 8px;
+    background: #fff;
+    margin: 5px;
+    box-shadow: 2px 5px 7px 0px rgba(39, 75, 118, 0.1);
+}
+
+.item_number {
+    color: #40424a;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.product_item h6 {
+    color: #0086bf;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 3px 0;
+}
+
+.item_box {
+    width: 176px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+}
+
+.item_box > :nth-child(2) {
+    color: #0086bf;
+    font-family: Inter;
+    font-size: 9px;
+    font-weight: 500;
+    margin: 2px 0;
+}
+
+.item_box > :nth-child(3) {
+    color: #40424a;
+    font-family: Inter;
+    font-size: 9px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.item_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.img_01 {
+    background-image: url("/img/products/SmartIssue.svg");
+    background-size: cover;
+}
+
+.img_02 {
+    background-image: url("/img/products/smart-comments.svg");
+    background-size: cover;
+}
+
+.img_03 {
+    background-image: url("/img/products/calendar.png");
+    background-size: cover;
+}
+
+.img_04 {
+    background-image: url("/img/products/RSS3.png");
+    background-size: cover;
+}
+
+.img_05 {
+    background-image: url("/img/products/Views.svg");
+    background-size: cover;
+}
+
+.img_06 {
+    background-image: url("/img/products/AI-Creator.svg");
+    background-size: cover;
+}
+
+.img_07 {
+    background-image: url("/img/products/spamDetector.svg");
+    background-size: cover;
+}

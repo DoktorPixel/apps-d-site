@@ -1,0 +1,403 @@
+.schedule-demo-banner {
+  background: url("/img/products/products-banner.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 285px;
+  margin-bottom: 40px;
+}
+
+.schedule-demo-banner-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 70px;
+  color: #fafafa;
+}
+
+.schedule-demo-left-part {
+  margin-top: 20px;
+}
+
+.schedule-demo-left-part h1 {
+  font-family: Roboto;
+  font-size: 70px;
+  margin: 0;
+}
+
+.schedule-demo-left-part p {
+  max-width: 500px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.booking-duration-mobile {
+  display: none;
+}
+
+.schedule-demo-right-part {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.schedule-demo-right-part > p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.schedule-demo-page {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.steps-img {
+  max-width: 380px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.step-back-btn {
+  background-color: transparent;
+  border: none;
+  color: #fafafa;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.cards-form {
+  max-width: 600px;
+  border-radius: 8px;
+  border: 1px solid #e6ebee;
+  background: #fafafa;
+  box-shadow: 2px 5px 7px 0px rgba(39, 75, 118, 0.1);
+  padding: 40px 88px;
+  margin: 0 auto;
+}
+
+.cards-form-calendar {
+  border-radius: 8px;
+  border: 1px solid #e6ebee;
+  background: #fafafa;
+  box-shadow: 2px 5px 7px 0px rgba(39, 75, 118, 0.1);
+  width: 500px;
+}
+
+.cards-form-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid #e6ebee;
+  background: #fafafa;
+  box-shadow: 2px 5px 7px 0px rgba(39, 75, 118, 0.1);
+  width: 514px;
+  padding: 20px 50px 40px 50px;
+}
+
+.cards-form-time .time-piker {
+  margin-bottom: 40px;
+}
+
+.cards-form Form {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.recaptcha {
+  color: #40424a;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cards-form .custom-button,
+.cards-form-time .custom-button {
+  width: 100%;
+  height: 60px;
+  color: #fafafa;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #21ace8;
+  display: inline-block;
+}
+
+.your-chosen-time {
+  border-radius: 10px;
+  border: 1px solid #d4d4d4;
+  background: #fafafa;
+  box-shadow: 2px 5px 7px 0px rgba(39, 75, 118, 0.1);
+  padding: 15px 30px;
+  color: var(--text-all-text, #40424a);
+  font-family: Roboto;
+  margin: 0 auto;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+.your-chosen-time p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.your-chosen-time p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.your-chosen-time p:nth-child(3) {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.step1-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.timetable-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.timetable-wrapper .ant-form-item-label label {
+  color: var(--text-all-text, #40424a);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.time-slot-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  gap: 20px;
+}
+
+.time-slot-button {
+  display: flex;
+  width: 106px;
+  height: 35px;
+  margin: 0 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #21ace8;
+  color: #40424a;
+  background-color: #fafafa;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.time-slot-button:hover,
+.time-slot-button:focus,
+.time-slot-button:active {
+  background: var(--button-5, #21ace8);
+  color: #fafafa;
+}
+
+.time-slot-button.active-button {
+  background: var(--button-5, #21ace8);
+  color: #fafafa;
+}
+
+.time-piker .ant-form-item .ant-form-item-explain-error {
+  margin: 6px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .schedule-demo-banner-content {
+    padding: 44px 18px;
+  }
+
+  .schedule-demo-left-part h1 {
+    font-size: 56px;
+  }
+
+  .schedule-demo-left-part p {
+    font-size: 18px;
+    width: 450px;
+  }
+
+  .schedule-demo-right-part {
+    font-size: 14px;
+  }
+
+  .schedule-demo-right-part .breadcrumb {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .timetable-wrapper {
+    margin: 0 20px;
+  }
+
+  .schedule-demo-left-part h1 {
+    font-size: 40px;
+  }
+
+  .schedule-demo-left-part p {
+    font-size: 16px;
+    width: 350px;
+  }
+
+  .schedule-demo-right-part {
+    font-size: 12px;
+  }
+
+  .schedule-demo-right-part .breadcrumb {
+    font-size: 16px;
+  }
+
+  .cards-form-time {
+    width: 400px;
+    padding: 20px 12px 40px 12px;
+  }
+
+  .cards-form-time .time-piker {
+    margin-bottom: 40px;
+  }
+
+  .cards-form {
+    padding: 30px 60px;
+  }
+
+  .cards-form Form {
+    max-width: 580px;
+  }
+
+  .cards-form .custom-button,
+  .cards-form-time .custom-button {
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .timetable-wrapper .ant-form-item-label label {
+    font-size: 16px;
+  }
+
+  .time-slot-container {
+    max-width: 400px;
+    gap: 8px;
+  }
+
+  .time-slot-button {
+    display: flex;
+    width: 84px;
+    height: 32px;
+    margin: 0 0px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .schedule-demo-banner {
+    height: 240px;
+  }
+
+  .schedule-demo-left-part h1 {
+    font-size: 30px;
+  }
+
+  .schedule-demo-left-part p {
+    font-size: 12px;
+    width: 350px;
+  }
+
+  .schedule-demo-right-part {
+    display: none;
+  }
+
+  .booking-duration-mobile {
+    display: block;
+  }
+
+  .steps-img {
+    max-width: 300px;
+  }
+
+  .steps-img img {
+    max-width: 300px;
+  }
+
+  .timetable-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .timetable-wrapper {
+    max-width: 420px;
+  }
+
+  .cards-form-calendar {
+    max-width: 400px;
+  }
+
+  .cards-form-time {
+    max-width: 360px;
+  }
+
+  .time-slot-container {
+    max-width: 400px;
+    gap: 10px;
+  }
+
+  .time-slot-button {
+    display: flex;
+    width: 80px;
+    height: 28px;
+    margin: 0 1px;
+    font-size: 14px;
+  }
+
+  .cards-form-time {
+    padding: 20px 20px 40px 20px;
+  }
+
+  .cards-form {
+    max-width: 400px;
+    padding: 20px 40px;
+  }
+
+  .your-chosen-time {
+    padding: 0px 20px;
+    margin-bottom: 20px;
+  }
+
+  .your-chosen-time p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .your-chosen-time p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .your-chosen-time p:nth-child(3) {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .recaptcha {
+    font-size: 14px;
+  }
+}

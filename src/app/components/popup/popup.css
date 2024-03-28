@@ -1,0 +1,160 @@
+.popup {
+  width: 361px;
+  /* height: 376px; */
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #5a5eb8;
+  background: rgb(12, 56, 102);
+  padding: 15px 32px;
+}
+
+button.download {
+  width: calc(100% - 40px);
+  text-align: center;
+}
+
+#download:disabled {
+  cursor: not-allowed;
+}
+
+.popup #download {
+  display: flex;
+  /* width: 470px; */
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: #fff;
+  color: #42444d;
+}
+
+.popup div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.popup div:first-child p {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.popup p {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.popup .description {
+  margin: -10px 10px 10px -45px;
+  font-size: 16px;
+  font-style: normal;
+  text-align: start;
+}
+
+.popup .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.popup > div:last-child button {
+  margin: 20px;
+  border-radius: 70px;
+  border: 2px solid #fff;
+  color: rgb(12, 56, 102);
+  background-color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.bookIcon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgb(12, 56, 102);
+  font-size: 25px;
+  font-weight: 600;
+  box-shadow: 0px 4px 10px rgba(63, 81, 181, 0.3);
+  cursor: pointer;
+  z-index: 100000;
+}
+
+@media only screen and (max-width: 480px) {
+  .popup {
+    width: 75vw;
+  }
+
+  .popup input {
+    width: 240px;
+  }
+
+  .popup img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .popup .description {
+    margin: -10px 10px 10px 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .popup {
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+  }
+  #sentForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #sentForm > div {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+  }
+  #sentForm .MuiInputBase-input {
+    width: auto;
+  }
+  .popup > div:last-child button {
+    max-width: 200px;
+    margin: 5px auto;
+  }
+  .popup > div:nth-child(2) {
+    text-align: center;
+  }
+}

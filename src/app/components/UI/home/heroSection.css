@@ -1,0 +1,116 @@
+.hero-section-wrapper {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 740px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section-content {
+  max-width: 1200px;
+  margin-left: 130px;
+}
+
+.hero-section-wrapper h1 {
+  color: #fafafa;
+  text-shadow: 2px 5px 7px rgba(39, 75, 118, 0.1);
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.hero-section-wrapper h1 img {
+  position: relative;
+  width: 96px;
+  height: 108px;
+  top: 36px;
+}
+
+.business-processes {
+  padding-left: 76px;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-right: 165px;
+}
+
+.btn-wrapper .btn-schedule {
+  background-color: #21ace8;
+  border: none;
+}
+
+.btn-wrapper .btn-schedule:hover,
+.btn-wrapper .btn-schedule:focus {
+  background-color: #0086d4;
+  cursor: pointer;
+}
+
+.btn-wrapper .btn-schedule:active {
+  background-color: #006dad;
+}
+
+.btn-wrapper .btn-products {
+  border: solid 2px;
+  border-color: #21ace8;
+  color: #21ace8;
+  background-color: transparent;
+}
+
+.btn-wrapper .btn-products:hover,
+.btn-wrapper .btn-products:focus {
+  border-color: #0086d4;
+  color: #0086d4;
+  cursor: pointer;
+}
+
+.btn-wrapper .btn-products:active {
+  border-color: #006dad;
+  color: #006dad;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero-section-content {
+    max-width: 700px;
+    margin-left: 100px;
+  }
+
+  .hero-section-wrapper h1 {
+    font-size: 70px;
+  }
+
+  .business-processes {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-section-content {
+    max-width: 400px;
+  }
+
+  .hero-section-wrapper h1 {
+    font-size: 48px;
+    line-height: 120%;
+  }
+
+  .hero-section-wrapper h1 img {
+    display: none;
+  }
+
+  .business-processes {
+    padding-left: 0;
+  }
+
+  .btn-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+}
