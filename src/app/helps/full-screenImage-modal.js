@@ -9,9 +9,7 @@ function FullScreenImageModal({ imageUrl, onClose }) {
   return (
     <div className="fullscreen-modal">
       <div className="modal-content">
-        <Image src={imageUrl} alt="Full Screen" 
-        // onClick={onClose} 
-        />
+        <Image src={imageUrl} alt="Full Screen" onClick={onClose} />
         <button
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}

@@ -2,10 +2,10 @@ import "./globals.css";
 import { Header } from "./components/header/header";
 import { Footer } from "@/app/components/footer/footer";
 import Whitepaper from "@/app/components/popup/popup";
-import { GoogleTag } from "../../public/gtag";
+// import { GoogleTag } from "../../public/gtag";
 import Script from "next/script";
-import { TrackingTool } from "./components/tracking-tool";
-import { Chatbot } from "../../public/chatbot";
+// import { TrackingTool } from "./components/tracking-tool";
+// import { Chatbot } from "../../public/chatbot";
 
 export const metadata = {
   title: "AppsDelivered",
@@ -39,15 +39,15 @@ export default function RootLayout({ children }) {
       </head>
       <html lang="en">
         <body>
-					<Chatbot />
+					{/* <Chatbot /> */}
           <Script
             className="consent-banner"
             type="text/javascript"
             strategy="lazyOnload"
             src="https://app.termly.io/resource-blocker/67d31191-2f80-4f5e-9efe-bf9eb3d34fd1"
           />
-          <GoogleTag />
-          <TrackingTool />
+          {/* <GoogleTag /> */}
+          {/* <TrackingTool /> */}
           <Header />
           <main className="main">{children}</main>
           <Whitepaper />
