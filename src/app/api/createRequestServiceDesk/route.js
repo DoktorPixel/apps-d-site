@@ -4,7 +4,7 @@ export async function POST (req) {
 	try {
 		const body = await req.json();
 		const JIRA_EMAIL = `kateryna.voitsekhova@appsdelivered.com`
-		const JIRA_TOKEN = `ATATT3xFfGF0TWjJx7bcIO4IpefCuGaiW_8nRBf3XFtwaYSH8iFZG7nJ2SUsyTHYUuAXsiIiTU2YOnaxWL-NZwKIbaYFs4R9GHIlkbO8BlQERQzESxtObjEnDcFG0nUGVzNIcrmCFo9a87DwaO-PKIzcmAQyVcKjEHR8KntVQmzcw8xf6PlSTrs=2F2AB232` // awaitsupport
+		const JIRA_TOKEN = process.env.JIRA_TOKEN
 		const BASE_URL = `https://appsdelivered.atlassian.net`	
 		const API_URL = `/rest/servicedeskapi/request`;
 		
